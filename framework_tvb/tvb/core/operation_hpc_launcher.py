@@ -58,7 +58,10 @@ def do_operation_launch(simulator_gid, input_folder, available_disk_space):
 
 
 if __name__ == '__main__':
+    TvbProfile.set_profile(TvbProfile.WEB_PROFILE, True)
+
     simulator_gid = sys.argv[1]
     input_folder = sys.argv[2]
     available_disk_space = sys.argv[3]
+
     do_operation_launch(simulator_gid, input_folder, available_disk_space)
